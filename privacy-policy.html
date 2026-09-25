@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aleré Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-card: #f5f6f8;
+    --text: #14161a;
+    --text-muted: #565c66;
+    --border: #e2e4e9;
+    --accent: #0a6b5c;
+    --banner-bg: #fff4d6;
+    --banner-border: #caa227;
+    --banner-text: #5a4400;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121316;
+      --bg-card: #1c1e22;
+      --text: #eceef1;
+      --text-muted: #a3a9b3;
+      --border: #2c2f35;
+      --accent: #4fd8bd;
+      --banner-bg: #3a2f0c;
+      --banner-border: #a0801f;
+      --banner-text: #ffe6a3;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    font-size: 16px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px 16px 64px;
+  }
+  .banner {
+    background: var(--banner-bg);
+    border: 1px solid var(--banner-border);
+    color: var(--banner-text);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 26px;
+    margin: 8px 0 4px;
+  }
+  .meta {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  .meta div { margin: 2px 0; }
+  h2 {
+    font-size: 18px;
+    margin: 28px 0 8px;
+    color: var(--accent);
+  }
+  p, li { color: var(--text); }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  ul { padding-left: 20px; margin: 8px 0; }
+  a { color: var(--accent); }
+  .disclaimer {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Aleré Privacy Policy</h1>
+  <div class="meta">
+    <div>Effective date: 2026-09-25</div>
+    <div>Version: 1.0</div>
+  </div>
+
+  <p>Aleré ("the app") helps you understand how food, sleep, stress, and
+  activity relate to your metabolism. This policy explains what data the app
+  handles, where it goes, and how you stay in control of it. It applies to
+  the Aleré mobile app. A separate, more detailed
+  <a href="./consumer-health-data-privacy-policy.html">Consumer Health Data
+  Privacy Policy</a> covers your health data specifically, as required by
+  Washington's My Health My Data Act and similar state laws — read that page
+  for the full list of health-data categories, sources, and your rights.</p>
+
+  <div class="card">
+    <h2>Data you provide</h2>
+    <ul>
+      <li><strong>Account details</strong> — email address, username, and a
+      hashed password. Your account is stored on your device.</li>
+      <li><strong>Health profile</strong> — age, sex, height, weight,
+      waist/hip measurements, lab values (e.g. fasting glucose, HbA1c),
+      lifestyle answers, dietary identity, and goals collected during
+      onboarding.</li>
+      <li><strong>Logs and scans</strong> — meal photos, CGM screenshots,
+      lab-report photos, typed or spoken bio-logs, and chat messages you send
+      to the Alis assistant.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Your data lives on your device, with an automatic backup</h2>
+    <p>Your health profile, health record, health history (steps, sleep,
+    heart-rate variability, resting heart rate, glucose, body measurements),
+    meal log, and the patterns Alis has learned are backed up automatically
+    to Aleré's database (Supabase, hosted in the United States, encrypted in
+    transit and at rest) so they survive logging out and back in. This backup
+    is <strong>on by default</strong>; access to your rows is restricted to
+    your own account.</p>
+    <p><strong>Never uploaded, under any setting:</strong> meal photo bytes /
+    image files, and calendar event titles, notes, locations, or attendees.
+    Chat message text is also not part of the backup.</p>
+    <p>Turn the backup off any time in <strong>Profile → Back up &amp;
+    sync</strong>, which deletes the server copy. Because accounts created
+    without an email are anonymous, a backup made under an anonymous account
+    cannot be restored on a different phone.</p>
+  </div>
+
+  <div class="card">
+    <h2>How AI analysis works</h2>
+    <p>When AI features are enabled, the content you actively choose to
+    share for analysis — meal photos, CGM screenshots, lab-report photos,
+    voice or typed bio-logs, and chat messages (with relevant health
+    context) — is sent to <strong>Google's Gemini API</strong> for one-time
+    processing, either directly from the app or by way of Aleré's own
+    backend relay when one is configured (the relay forwards the request and
+    does not keep a copy of your health data). Google processes this content
+    under Google's API terms and privacy policy. Aleré uses the response only
+    to show you your results, and this data is not used for advertising. You
+    are asked for consent before the first AI request, and you can decline;
+    if no AI backend or key is configured, nothing leaves your device for AI
+    analysis.</p>
+  </div>
+
+  <div class="card">
+    <h2>Calendar (optional)</h2>
+    <p>If you turn on <strong>Connect calendar</strong> (Profile, or during
+    setup), Aleré reads the times of your upcoming events and assigns each a
+    broad category (for example "meeting," "workout," "travel") — entirely on
+    your phone. Over weeks, this lets the companion notice that a recurring
+    event tends to fall on days your stress reading is above your usual, and
+    suggest a short walk before it.</p>
+    <p><strong>Titles, notes, locations, and attendees are never stored and
+    never leave your device</strong> — not to Aleré's servers, not to any AI
+    provider. Only a category, a time, and an opaque key (so a renamed or
+    rescheduled recurring event is still recognized) are kept, on-device.
+    Turn it off any time in Profile → Calendar, or revoke calendar access in
+    your phone's Settings.</p>
+  </div>
+
+  <div class="card">
+    <h2>Community (optional)</h2>
+    <p>If you choose to join the Community, Aleré creates a separate account
+    on its backend and shares only the progress numbers you choose to share —
+    your <strong>streak, points, and metabolic-age trend</strong> — and only
+    with friends whose requests you accept, while sharing stays on. Your
+    meals, photos, glucose predictions, and health profile are never shared
+    with other users through Community. You can turn off sharing, remove
+    friends, or stop using Community at any time.</p>
+  </div>
+
+  <div class="card">
+    <h2>What we never do</h2>
+    <ul>
+      <li>No advertising or ad SDKs.</li>
+      <li>No cross-app tracking.</li>
+      <li>No analytics SDKs.</li>
+      <li>No selling or sharing of personal or health data with data brokers
+      or any other third party outside what is described on this page.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Exporting and deleting your data</h2>
+    <p><strong>Download your data</strong> any time from within the app —
+    this produces a file with your profile, health record, meal log (macros
+    and predicted peaks, without photo bytes), health history, and learned
+    patterns. Chat messages and photo files are not included in the export
+    file.</p>
+    <p><strong>Profile → Delete Account &amp; Data</strong> deletes the
+    server backup of your health profile, health record, sleep, glucose,
+    meals, and learned patterns first, then permanently erases your account,
+    health profile, Metabolic Twin timeline, and chat history from this
+    device. Uninstalling the app removes only the local copy — use Delete
+    Account first if you also want the server backup gone. If you joined
+    Community, your Community profile and shared stats are separate from
+    this health backup; turn off sharing and remove friends to stop sharing
+    them, and contact us (below) to remove the Community account itself.</p>
+  </div>
+
+  <div class="card disclaimer">
+    <h2 style="margin-top:0;">Health disclaimer</h2>
+    <p>Aleré provides wellness estimates for informational purposes only.
+    Predicted glucose responses and other outputs are <strong>estimates, not
+    measurements</strong>. Aleré is not a medical device and does not provide
+    medical advice, diagnosis, or treatment. Consult a healthcare
+    professional before making health decisions.</p>
+  </div>
+
+  <div class="card">
+    <h2>Children</h2>
+    <p>Aleré is not directed at children under 13 and should not be used by
+    them.</p>
+  </div>
+
+  <div class="card">
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes materially, we will update the "Effective
+    date" above and, where required, notify you in the app.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Questions about this policy: support@alerelabs.ai</p>
+  </div>
+
+</div>
+</body>
+</html>
