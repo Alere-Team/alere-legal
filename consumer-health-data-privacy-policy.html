@@ -84,6 +84,14 @@
   }
   ul { padding-left: 20px; margin: 8px 0; }
   a { color: var(--accent); }
+  .placeholder {
+    background: var(--banner-bg);
+    color: var(--banner-text);
+    border: 1px dashed var(--banner-border);
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 13px;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -117,10 +125,12 @@
 </head>
 <body>
 <div class="wrap">
+  <div class="banner">DRAFT — PENDING COUNSEL SIGN-OFF. NOT YET PUBLISHED.</div>
+
   <h1>Consumer Health Data Privacy Policy</h1>
   <div class="meta">
-    <div>Effective date: 2026-09-25</div>
-    <div>Version: 1.0</div>
+    <div>Effective date: [PLACEHOLDER — to be set on publish]</div>
+    <div>Version: draft-0.1</div>
   </div>
 
   <p>This is Aleré's <strong>standalone Consumer Health Data Privacy
@@ -237,14 +247,14 @@
       Download your data produces a file with your health profile, health
       record, meal log, health history, and learned patterns. (Chat messages
       and photo files are not included in the export file.)</li>
-      <li><strong>Delete</strong> — Profile → Delete Account &amp; Data
+      <li><strong>Delete</strong> — Profile → Delete account
       deletes the server backup of your health data, then permanently erases
       your account, health profile, meal timeline, and chat history from
       your device. If you joined Community, contact us (below) to remove
       that separate Community account.</li>
       <li><strong>Withdraw consent</strong> — turn AI features off at any
       time (the setting that governs whether content is sent to Google);
-      turn off Back up &amp; sync to stop and delete the server backup;
+      turn off Encrypted backup to stop and delete the server backup;
       leave Community or turn off sharing to stop sharing progress
       numbers.</li>
       <li><strong>Appeal</strong> — if you believe a request was not
@@ -289,11 +299,13 @@
     <h2>Contact</h2>
     <p>Questions, access, deletion, or consent-withdrawal requests regarding
     consumer health data:
-    privacy@alerelabs.ai</p>
+    <span class="placeholder">support@alerelabs.ai (PLACEHOLDER — replace
+    with a real, monitored address before publishing)</span></p>
   </div>
 
   <footer>
-    Label this page exactly "Consumer Health Data Privacy Policy" in
+    Aleré — draft document, not for public distribution until published by
+    Aleré. Label this page exactly "Consumer Health Data Privacy Policy" in
     every link to it (app store listings, website, and in-app).
   </footer>
 </div>
